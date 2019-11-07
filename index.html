@@ -1,0 +1,39 @@
+<!DOCTYPE html>
+<html lang="en">
+	<head>
+		<title>JS Forms - 1</title>
+	</head>
+	<body>
+		<!-- Uppgift 1 -->
+		<input type="text" id="meal-input">
+		<button onclick="showMeal()">Show Meal!</button>
+		<div id="meal"></div>
+
+		<!-- Uppgift 2 -->
+		<div id="upg2">
+			<input type="number" id="a">
+			<input type="number" id="b">
+			<p id="operator"></p>
+			<button onclick="setOperator('+')">+</button>
+			<button onclick="setOperator('-')">-</button>
+			<button onclick="setOperator('/')">/</button>
+			<button onclick="setOperator('*')">*</button>
+			<button onclick="setOperator('%')">%</button>
+			<button onclick="showResult(calculate())">Calculate!</button>
+			<div id="resultat"></div>
+		</div>
+
+		<!-- Uppgift 3 -->
+		<input id="firstDate" type="date">
+		<input id="secondDate" type="date">
+		<button onclick="getDaysBetween()">Get the number of days between</button>
+		<p id="daysBetweenOutput"></p>
+
+		<!-- Uppgift 4 -->
+		<input id="calculationDate" type="date">
+		<button onclick="getDaysToToday()">Get the number of days between the date and today!</button>
+		<p id="daysToTodayOutput"></p>
+
+		<script src="main.js"></script>
+	</body>
+</html>
